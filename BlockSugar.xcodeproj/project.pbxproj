@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8392106517206E830062380B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392106417206E830062380B /* Foundation.framework */; };
-		8392106A17206E830062380B /* BlockSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8392106917206E830062380B /* BlockSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		839210B817206FC90062380B /* A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8392107417206FC80062380B /* A2BlockDelegate.h */; };
 		839210B917206FC90062380B /* A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8392107517206FC80062380B /* A2BlockDelegate.m */; };
 		839210BA17206FC90062380B /* A2BlockInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8392107617206FC80062380B /* A2BlockInvocation.h */; };
@@ -93,13 +92,13 @@
 		8392119E17206FDC0062380B /* prep_cif.c in Sources */ = {isa = PBXBuildFile; fileRef = 8392117C17206FDC0062380B /* prep_cif.c */; };
 		8392119F17206FDC0062380B /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 8392117D17206FDC0062380B /* raw_api.c */; };
 		839211A017206FDC0062380B /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 8392117E17206FDC0062380B /* types.c */; };
+		839211AD172071700062380B /* BlockSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 839211AC172071700062380B /* BlockSugar.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8392106117206E830062380B /* libBlockSugar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBlockSugar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8392106417206E830062380B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8392106817206E830062380B /* BlockSugar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockSugar-Prefix.pch"; sourceTree = "<group>"; };
-		8392106917206E830062380B /* BlockSugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSugar.h; sourceTree = "<group>"; };
 		8392107417206FC80062380B /* A2BlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockDelegate.h; sourceTree = "<group>"; };
 		8392107517206FC80062380B /* A2BlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2BlockDelegate.m; sourceTree = "<group>"; };
 		8392107617206FC80062380B /* A2BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockInvocation.h; sourceTree = "<group>"; };
@@ -184,6 +183,7 @@
 		8392117C17206FDC0062380B /* prep_cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prep_cif.c; sourceTree = "<group>"; };
 		8392117D17206FDC0062380B /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
 		8392117E17206FDC0062380B /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
+		839211AC172071700062380B /* BlockSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSugar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				8392107317206FC80062380B /* BlocksKit */,
-				8392106917206E830062380B /* BlockSugar.h */,
+				839211AC172071700062380B /* BlockSugar.h */,
 				8392106717206E830062380B /* Supporting Files */,
 			);
 			path = BlockSugar;
@@ -413,7 +413,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8392106A17206E830062380B /* BlockSugar.h in Headers */,
 				8392117F17206FDC0062380B /* ffi.h in Headers */,
 				8392118017206FDC0062380B /* ffi_armv7.h in Headers */,
 				8392118117206FDC0062380B /* ffi_common.h in Headers */,
@@ -458,6 +457,7 @@
 				839210F317206FC90062380B /* UIPopoverController+BlocksKit.h in Headers */,
 				839210F517206FC90062380B /* UIView+BlocksKit.h in Headers */,
 				839210F717206FC90062380B /* UIWebView+BlocksKit.h in Headers */,
+				839211AD172071700062380B /* BlockSugar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
