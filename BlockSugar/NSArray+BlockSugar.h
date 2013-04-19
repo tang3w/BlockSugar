@@ -25,6 +25,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BlocksKit.h"
+
+#import "BSGlobal.h"
+
 @interface NSArray (BlockSugar)
+
+- (void)eachWithIndex:(BSValueIndexBlock)block;
+
+- (void)eachWithIndexAndStop:(BSValueIndexStopBlock)block;
+
+- (NSArray *)takeWhile:(BKValidationBlock)block;
 
 @end

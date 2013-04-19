@@ -96,6 +96,7 @@
 		839C95611720E8DA0086B6BD /* NSArray+BlockSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */; };
 		839C95621720E8DA0086B6BD /* NSArray+BlockSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */; };
 		839C95651720F0070086B6BD /* BlockSugar-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 839C95641720F0070086B6BD /* BlockSugar-Prefix.pch */; };
+		839C95A81721415E0086B6BD /* BSGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 839C95A71721415E0086B6BD /* BSGlobal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 		839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlockSugar.h"; sourceTree = "<group>"; };
 		839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlockSugar.m"; sourceTree = "<group>"; };
 		839C95641720F0070086B6BD /* BlockSugar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlockSugar-Prefix.pch"; sourceTree = "<group>"; };
+		839C95A71721415E0086B6BD /* BSGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGlobal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		8392106617206E830062380B /* BlockSugar */ = {
 			isa = PBXGroup;
 			children = (
+				839C95A71721415E0086B6BD /* BSGlobal.h */,
 				839211AC172071700062380B /* BlockSugar.h */,
 				839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */,
 				839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */,
@@ -475,6 +478,7 @@
 				839211AD172071700062380B /* BlockSugar.h in Headers */,
 				839C95611720E8DA0086B6BD /* NSArray+BlockSugar.h in Headers */,
 				839C95651720F0070086B6BD /* BlockSugar-Prefix.pch in Headers */,
+				839C95A81721415E0086B6BD /* BSGlobal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

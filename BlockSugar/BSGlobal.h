@@ -1,4 +1,4 @@
-// NSArray+BlockSugar.m
+// BSGlobal.h
 //
 // Copyright (c) 2013 Tang Tianyong
 //
@@ -23,38 +23,5 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
-#import "NSArray+BlockSugar.h"
-
-@implementation NSArray (BlockSugar)
-
-- (void)eachWithIndex:(BSValueIndexBlock)block {
-    NSParameterAssert(block != nil);
-    
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj, idx);
-    }];
-}
-
-- (void)eachWithIndexAndStop:(BSValueIndexStopBlock)block {
-    NSParameterAssert(block != nil);
-    
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj, idx, stop);
-    }];
-}
-
-- (NSArray *)takeWhile:(BKValidationBlock)block {
-    NSParameterAssert(block != nil);
-    
-    NSMutableArray *array = [NSMutableArray array];
-    
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if (block(obj)) {
-            [array addObject:obj];
-        }
-    }];
-    
-    return array;
-}
-
-@end
+typedef void (^BSValueIndexBlock)(id obj, int idx);
+typedef void (^BSValueIndexStopBlock)(id obj, int idx, BOOL *stop);
