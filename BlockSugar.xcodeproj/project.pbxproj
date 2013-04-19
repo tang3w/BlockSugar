@@ -201,6 +201,7 @@
 		8392105817206E830062380B = {
 			isa = PBXGroup;
 			children = (
+				839C955E1720E5AB0086B6BD /* Library */,
 				8392106617206E830062380B /* BlockSugar */,
 				8392106317206E830062380B /* Frameworks */,
 				8392106217206E830062380B /* Products */,
@@ -226,7 +227,6 @@
 		8392106617206E830062380B /* BlockSugar */ = {
 			isa = PBXGroup;
 			children = (
-				8392107317206FC80062380B /* BlocksKit */,
 				839211AC172071700062380B /* BlockSugar.h */,
 				8392106717206E830062380B /* Supporting Files */,
 			);
@@ -404,6 +404,14 @@
 				8392117E17206FDC0062380B /* types.c */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		839C955E1720E5AB0086B6BD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8392107317206FC80062380B /* BlocksKit */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
