@@ -93,12 +93,14 @@
 		8392119F17206FDC0062380B /* raw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 8392117D17206FDC0062380B /* raw_api.c */; };
 		839211A017206FDC0062380B /* types.c in Sources */ = {isa = PBXBuildFile; fileRef = 8392117E17206FDC0062380B /* types.c */; };
 		839211AD172071700062380B /* BlockSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 839211AC172071700062380B /* BlockSugar.h */; };
+		839C95611720E8DA0086B6BD /* NSArray+BlockSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */; };
+		839C95621720E8DA0086B6BD /* NSArray+BlockSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */; };
+		839C95651720F0070086B6BD /* BlockSugar-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 839C95641720F0070086B6BD /* BlockSugar-Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8392106117206E830062380B /* libBlockSugar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBlockSugar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8392106417206E830062380B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8392106817206E830062380B /* BlockSugar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockSugar-Prefix.pch"; sourceTree = "<group>"; };
 		8392107417206FC80062380B /* A2BlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockDelegate.h; sourceTree = "<group>"; };
 		8392107517206FC80062380B /* A2BlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2BlockDelegate.m; sourceTree = "<group>"; };
 		8392107617206FC80062380B /* A2BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockInvocation.h; sourceTree = "<group>"; };
@@ -184,6 +186,9 @@
 		8392117D17206FDC0062380B /* raw_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw_api.c; sourceTree = "<group>"; };
 		8392117E17206FDC0062380B /* types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = types.c; sourceTree = "<group>"; };
 		839211AC172071700062380B /* BlockSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSugar.h; sourceTree = "<group>"; };
+		839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlockSugar.h"; sourceTree = "<group>"; };
+		839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlockSugar.m"; sourceTree = "<group>"; };
+		839C95641720F0070086B6BD /* BlockSugar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlockSugar-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,8 +206,9 @@
 		8392105817206E830062380B = {
 			isa = PBXGroup;
 			children = (
-				839C955E1720E5AB0086B6BD /* Library */,
 				8392106617206E830062380B /* BlockSugar */,
+				839C955E1720E5AB0086B6BD /* Library */,
+				839C95631720F0070086B6BD /* Support */,
 				8392106317206E830062380B /* Frameworks */,
 				8392106217206E830062380B /* Products */,
 			);
@@ -228,17 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				839211AC172071700062380B /* BlockSugar.h */,
-				8392106717206E830062380B /* Supporting Files */,
+				839C955F1720E8DA0086B6BD /* NSArray+BlockSugar.h */,
+				839C95601720E8DA0086B6BD /* NSArray+BlockSugar.m */,
 			);
 			path = BlockSugar;
-			sourceTree = "<group>";
-		};
-		8392106717206E830062380B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8392106817206E830062380B /* BlockSugar-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8392107317206FC80062380B /* BlocksKit */ = {
@@ -414,6 +413,14 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
+		839C95631720F0070086B6BD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				839C95641720F0070086B6BD /* BlockSugar-Prefix.pch */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -466,6 +473,8 @@
 				839210F517206FC90062380B /* UIView+BlocksKit.h in Headers */,
 				839210F717206FC90062380B /* UIWebView+BlocksKit.h in Headers */,
 				839211AD172071700062380B /* BlockSugar.h in Headers */,
+				839C95611720E8DA0086B6BD /* NSArray+BlockSugar.h in Headers */,
+				839C95651720F0070086B6BD /* BlockSugar-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +569,7 @@
 				8392119E17206FDC0062380B /* prep_cif.c in Sources */,
 				8392119F17206FDC0062380B /* raw_api.c in Sources */,
 				839211A017206FDC0062380B /* types.c in Sources */,
+				839C95621720E8DA0086B6BD /* NSArray+BlockSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +634,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/BlockSugar.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlockSugar/BlockSugar-Prefix.pch";
+				GCC_PREFIX_HEADER = "Support/BlockSugar-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -636,7 +646,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/BlockSugar.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlockSugar/BlockSugar-Prefix.pch";
+				GCC_PREFIX_HEADER = "Support/BlockSugar-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

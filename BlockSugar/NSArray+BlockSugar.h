@@ -1,4 +1,4 @@
-// BlockSugar.h
+// NSArray+BlockSugar.h
 //
 // Copyright (c) 2013 Tang Tianyong
 //
@@ -23,6 +23,8 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
-#import "NSArray+BlockSugar.h"
+#import <Foundation/Foundation.h>
 
-#import "BlocksKit.h"
+@interface NSArray (BlockSugar)
+
+@end

@@ -1,4 +1,4 @@
-// BlockSugar.h
+// NSArray+BlockSugar.m
 //
 // Copyright (c) 2013 Tang Tianyong
 //
@@ -25,4 +25,6 @@
 
 #import "NSArray+BlockSugar.h"
 
-#import "BlocksKit.h"
+@implementation NSArray (BlockSugar)
+
+@end
