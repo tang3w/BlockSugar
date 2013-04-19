@@ -1,4 +1,4 @@
 BlockSugar
 ==========
 
-Synthesize BlocksKit, ObjectiveSugar and more
+Enjoy Objective-C block
