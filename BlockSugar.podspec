@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '5.0'
 
-  s.ios.dependency = 'BlocksKit', '~> 1.8.1'
+  s.ios.dependency 'BlocksKit', '~> 1.8.1'
 
-  s.source_files   = 'BlockSugar/**/*.{h,m}'
+  s.source_files = 'BlockSugar/**/*.{h,m}'
 end
